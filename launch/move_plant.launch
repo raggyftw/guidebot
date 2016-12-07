@@ -1,0 +1,4 @@
+<launch>
+     <node name="find_plant3" pkg="Guidebot" type="find_plant3" output="screen">
+     </node>
+</launch>

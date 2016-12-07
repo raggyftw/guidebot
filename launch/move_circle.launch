@@ -1,0 +1,6 @@
+<launch>
+     <node name="move_circle" pkg="Guidebot" type="move_circle" output="screen" >
+     </node>
+     <node name="view_depth" pkg="Guidebot" type="view_depth" output="screen">
+     </node>
+</launch>

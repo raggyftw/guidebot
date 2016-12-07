@@ -1,0 +1,35 @@
+<package>
+  <!-- Package Metadata -->
+  <name>guidebot</name>
+  <maintainer email="oeth16@student.aau.dk">Oliver Emil Trudslev Hansen</maintainer>
+  <description>
+    A guide bot prototype code by group B216 for the P1-Project at aau. 
+  </description>
+  <version>0.1.0</version>
+  <license>BSD</license>
+
+  <!-- Required by Catkin -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Package Dependencies -->
+ <build_depend>roscpp</build_depend>
+ <build_depend>tf</build_depend>
+ <build_depend>rospy</build_depend>
+ <build_depend>std_msgs</build_depend>
+ <build_depend>geometry_msgs</build_depend>
+ <build_depend>move_base_msgs</build_depend>
+ <build_depend>actionlib</build_depend>
+ <build_depend>cv_bridge</build_depend>
+ <build_depend>image_transport</build_depend>
+  
+ <run_depend>roscpp</run_depend>
+ <run_depend>tf</run_depend>
+ <run_depend>rospy</run_depend>
+ <run_depend>std_msgs</run_depend>
+ <run_depend>geometry_msgs</run_depend>
+ <run_depend>move_base_msgs</run_depend>
+ <run_depend>actionlib</run_depend>
+ <run_depend>cv_bridge</run_depend>
+ <run_depend>image_transport</run_depend>
+
+</package>	
