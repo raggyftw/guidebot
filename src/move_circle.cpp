@@ -7,7 +7,7 @@
 // Declaring the function for moving to the starting point.
 bool move_to_destination (double arr[2]);
 // Declaring the function that makes the robot patrol
-bool patrol();
+void patrol();
 // Creating the variables that will store the location of starting point and patrol point
 double start[2] = {0.0,0.0}; // Starting point
 double circle_start[2] = {0.76,1.11}; //Enter coordinates of where to start patrol.
@@ -28,7 +28,7 @@ public:
    cmd_patrol_pub = nh_.advertise <geometry_msgs::Twist>("cmd_vel_mux/input/teleop",1);
  }//End of patrol_node.
 
- bool patrol ()
+ void patrol ()
  {
    // We publish geometry_msgs as long as the node is running.
     while(nh_.ok()){
@@ -50,7 +50,7 @@ ros::init(argc, argv, "find_plant_node");
 // Creating the nodlehandle nh.
 ros::NodeHandle nh;
 // Moves the turtlebot to starting position.
-destination_reached = move_to_destination(circle_start);
+//destination_reached = move_to_destination(circle_start);
 patrol_node mover(nh); //Storing the patrol_node class information in mover.
 // Running the patrol function.
 mover.patrol();
