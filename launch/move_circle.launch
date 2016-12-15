@@ -1,6 +1,6 @@
 <launch>
-     <node name="move_circle" pkg="Guidebot" type="move_circle" output="screen" >
+     <node name="patrol_node" pkg="Guidebot" type="patrol_node" output="screen" >
      </node>
-     <node name="view_depth" pkg="Guidebot" type="view_depth" output="screen">
+     <node name="detect_node" pkg="Guidebot" type="detect_node" output="screen">
      </node>
 </launch>
