@@ -46,7 +46,7 @@ public:
 int main (int argc, char **argv)
 {
 // Here we initialize the ros node and name it.
-ros::init(argc, argv, "find_plant_node");
+ros::init(argc, argv, "patrol_node");
 // Creating the nodlehandle nh.
 ros::NodeHandle nh;
 // Moves the turtlebot to starting position.
