@@ -30,11 +30,11 @@ include_directories(include
 
 
 # Define the executables used in guidebot.
-add_executable(find_plant3 src/find_plant3.cpp)
-add_executable(move_circle src/move_circle.cpp)
-add_executable(view_depth src/view_depth.cpp)
+add_executable(escort_node src/escort_node.cpp)
+add_executable(patrol_node src/patrol_node.cpp)
+add_executable(detect_node src/detect_node.cpp)
  
 # link libraries of the target files. 
-target_link_libraries(find_plant3 ${catkin_LIBRARIES})
-target_link_libraries(move_circle ${catkin_LIBRARIES}) 
-target_link_libraries(view_depth ${catkin_LIBRARIES})
+target_link_libraries(escort_node ${catkin_LIBRARIES})
+target_link_libraries(patrol_node ${catkin_LIBRARIES}) 
+target_link_libraries(detect_node ${catkin_LIBRARIES})
