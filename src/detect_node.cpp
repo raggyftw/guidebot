@@ -40,8 +40,8 @@ void Depth_callback(const sensor_msgs::Image::ConstPtr& msg)
                   if(counter== 10 && kill == false){
                   kill = true;
                   // Killing the currently running nodes.
-                  system("rosnode kill move_circle");
-                  system("rosnode kill view_depth");
+                  system("rosnode kill patrol_node");
+                  system("rosnode kill detect_node");
                   // Launches the next node.
                   system("roslaunch modular_lib_pkg move_plant.launch");
                   }//End of if statment.
@@ -62,7 +62,7 @@ void Depth_callback(const sensor_msgs::Image::ConstPtr& msg)
 int main(int argc, char* argv[])
 {
     // initializing ros and naming the node.
-    ros::init(argc, argv, "view_depth");
+    ros::init(argc, argv, "detect_node");
     // Creating nodehandler.
     ros::NodeHandle nh;
     // Subscribing to the depth image and returning the callback.
