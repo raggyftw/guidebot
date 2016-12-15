@@ -16,7 +16,7 @@ int user_input;
 int main (int argc, char **argv)
 {
 // Here we initialize the ros node and name it.
-ros::init(argc, argv, "find_plant_node");
+ros::init(argc, argv, "escort_node");
 // Creating the nodlehandle nh.
 ros::NodeHandle nh;
 std::cout<<"Press 1 to move to the plant, press 0 to return to start"<<std::endl;
